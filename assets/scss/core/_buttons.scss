@@ -1,0 +1,58 @@
+.btn {
+  color: var(--white);
+  font-size: var(--fs-11);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border: 2px solid var(--emerald);
+  border-radius: 50px;
+  gap: 10px;
+  & > ion-icon {
+    font-size: var(--fs-6);
+  }
+
+  &__primary {
+    background-color: var(--rich-black-fogra-29);
+    &:is(:hover, :focus) {
+      background-color: var(--emerald);
+      color: var(--xiketic);
+    }
+  }
+}
+
+.menu-btn {
+  color: var(--white);
+  font-size: var(--fs-1);
+  padding: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  h5 {
+    color: var(--white);
+    span {
+      color: var(--emerald);
+    }
+  }
+}
+
+.go-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--gunmetal-2);
+  visibility: hidden;
+  z-index: 2;
+
+  &.active {
+    visibility: visible;
+  }
+}

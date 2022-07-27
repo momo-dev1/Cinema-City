@@ -1,0 +1,72 @@
+/*-----------------------------------*\
+ * #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+input {
+  font: inherit;
+  width: 100%;
+  border: none;
+}
+
+select,
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+html {
+  font-family: var(--ff-poppins);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--eerie-black);
+}
+
+body.active {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--white);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--fs-1);
+}
+h2 {
+  font-size: var(--fs-2);
+}
+h3 {
+  font-size: var(--fs-6);
+}

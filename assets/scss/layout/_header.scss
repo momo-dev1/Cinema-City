@@ -1,0 +1,100 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  z-index: 4;
+
+  &.active {
+    background-color: var(--eerie-black);
+    padding: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      background: var(--eerie-black);
+      width: 100%;
+      max-width: 350px;
+      height: 100%;
+      box-shadow: -1px 0 3px hsl(0, 0, 0, 0.2);
+      visibility: hidden;
+      z-index: 5;
+      transition: all var(--transition-3);
+
+      &.active {
+        right: 0;
+        visibility: visible;
+        transition: var(--transition-4);
+      }
+
+      &__actions {
+        display: none;
+      }
+
+      &__header {
+        padding: 20px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__list {
+        border-top: 1px solid var(--white);
+        margin-bottom: 20px;
+      }
+
+      &__link {
+        color: var(--white);
+        font-size: var(--fs-8);
+        font-weight: var(--fw-500);
+        border-bottom: 1px solid var(--white);
+        padding: 10px 20px;
+        transition: var(--transition-1);
+
+        &:is(:hover, :focus) {
+          color: var(--emerald);
+        }
+      }
+
+      &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        &-item {
+          font-size: 25px;
+          color: var(--white);
+          padding: 5px;
+          border-radius: 10px;
+
+          &:is(:hover, :focus) {
+            &:nth-child(1) {
+              background: #4267b2;
+            }
+            &:nth-child(2) {
+              background: #00acee;
+            }
+            &:nth-child(3) {
+              background: linear-gradient(
+                45deg,
+                #f09433 0%,
+                #e6683c 25%,
+                #dc2743 50%,
+                #cc2366 75%,
+                #bc1888 100%
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}
