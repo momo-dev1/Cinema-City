@@ -56,3 +56,20 @@
     visibility: visible;
   }
 }
+
+.badge {
+  color: var(--white);
+  font-size: var(--fs-11);
+  font-weight: var(--fw-700);
+  border: 2px solid transparent;
+  padding: 3px 10px;
+
+  &-fill {
+    background: var(--white);
+    color: var(--raisin-black);
+  }
+
+  &-outline {
+    border-color: var(--white);
+  }
+}
