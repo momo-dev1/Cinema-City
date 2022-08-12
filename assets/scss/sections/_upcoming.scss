@@ -2,10 +2,42 @@
   background: url(../../images/upcoming-bg.png) no-repeat cover center;
   padding-block: var(--section-padding);
 
+  &__wrapper {
+    padding-inline: 15px;
+  }
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-top: 20px;
+    gap: 20px;
+    height: 100%;
+    margin-top: 40px;
+
+    & > li {
+      min-width: 100%;
+      scroll-snap-align: start;
+    }
+
+    &.scrollbar {
+      display: flex;
+      justify-content: flex-start;
+      gap: 30px;
+      overflow-x: auto;
+      scroll-snap-type: inline mandatory;
+      padding-bottom: 25px;
+
+      &::-webkit-scrollbar {
+        margin: 0;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+        box-shadow: 0 0 0 2px var(--emerald);
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: var(--gainsboro);
+        box-shadow: inset 0 1px 0 var(--black) inset 0 -1px 0 var(--black);
+        border-radius: 10px;
+      }
+    }
   }
 
   &__item {
@@ -21,7 +53,7 @@
       margin-bottom: 20px;
       transition: var(--transition-1);
 
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         inset: 0;
@@ -29,7 +61,10 @@
       }
 
       &:hover {
-        box-shadow: 0 1px 2px hsl(0, 0, 0, 0.5);
+        box-shadow: 0 1px 2px hsl(0, 0%, 0%, 0.5);
+        &::after {
+          background: hsl(0, 0%, 100%, 0.05);
+        }
       }
 
       img {
@@ -41,11 +76,9 @@
 
     &-content {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-
       time {
-        font-size: var(--fs-9);
+        font-size: var(--fs-8);
         color: var(--emerald);
         font-weight: var(--fw-500);
       }
@@ -53,7 +86,7 @@
 
     &-title {
       font-size: var(--fs-6);
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--fw-500);
       color: var(--white);
       margin-bottom: 10px;
       transition: var(--transition-1);
@@ -71,11 +104,14 @@
       .badge {
         color: var(--emerald);
       }
+
       .duration {
         margin-left: auto;
       }
       .duration,
       .rating {
+        display: flex;
+        gap: 5px;
         color: var(--gainsboro);
         font-size: var(--fs-11);
         font-weight: var(--fw-500);
