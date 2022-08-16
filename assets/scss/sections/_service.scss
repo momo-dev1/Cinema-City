@@ -1,4 +1,7 @@
 .service {
+  background: url("../images/service-bg.jpg") no-repeat cover center;
+  padding-block: var(--section-padding);
+
   &__wrapper {
     padding-inline: 15px;
   }
@@ -12,12 +15,11 @@
     font-size: var(--fs-11);
     font-weight: var(--fw-500);
     color: var(--gainsboro);
-    padding-left: 40px;
-
+    padding-left: 50px;
     &::before {
       content: "";
       position: absolute;
-      top: 5px;
+      top: 8px;
       left: 0;
       width: 45px;
       height: 2px;
@@ -36,11 +38,13 @@
     font-weight: var(--fw-500);
     line-height: 1.8;
   }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
+
   &__item {
     &-icon {
       display: grid;
