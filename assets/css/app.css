@@ -298,10 +298,7 @@ h3 {
 }
 
 .hero {
-  background-image: url("/assets/images/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("/assets/images/hero-bg.png") no-repeat center center/cover;
   height: 100vh;
   min-height: 700px;
   max-width: 1000px;
@@ -457,7 +454,7 @@ h3 {
 }
 
 .service {
-  background: url("../images/service-bg.jpg") no-repeat cover center;
+  background: url("../images/service-bg.jpg") no-repeat center center/cover;
   padding-block: var(--section-padding);
 }
 .service__wrapper {
