@@ -65,18 +65,10 @@
         transition: var(--transition-2);
       }
 
-      &:hover {
-        &::after {
-          transform: translateX(0%);
-          background-color: var(--emerald);
-          opacity: 30%;
-        }
-      }
-
       img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
 
@@ -85,8 +77,10 @@
       bottom: 55px;
       left: 55px;
       display: flex;
+      transform: translateY(200%);
       flex-direction: column;
       gap: 10px;
+      transition: 1s var(--transition-1);
       time {
         font-size: var(--fs-8);
         color: var(--white);
@@ -132,6 +126,16 @@
       color: var(--white);
       ion-icon {
         color: yellow;
+      }
+    }
+    &:hover {
+      .series__item-banner::after {
+        transform: translateX(0%);
+        background-color: var(--emerald);
+        opacity: 30%;
+      }
+      .series__item-content {
+        transform: translateY(0%);
       }
     }
   }
