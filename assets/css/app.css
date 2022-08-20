@@ -301,7 +301,6 @@ h3 {
   background: url("/assets/images/hero-bg.png") no-repeat center center/cover;
   height: 100vh;
   min-height: 700px;
-  max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -341,7 +340,7 @@ h3 {
 }
 
 .upcoming {
-  background: url(../../images/upcoming-bg.png) no-repeat cover center;
+  background: url(../../images/upcoming-bg.png) no-repeat center center/cover;
   padding-block: var(--section-padding);
 }
 .upcoming__wrapper {
@@ -565,7 +564,6 @@ h3 {
   aspect-ratio: 2/3;
   border-radius: 5px;
   overflow: hidden;
-  max-height: 500px;
   transition: var(--transition-1);
 }
 .series__item-banner::after {
@@ -629,6 +627,8 @@ h3 {
   padding: 5px 10px;
   border-radius: 20px;
   gap: 5px;
+  transform: translateY(-200%);
+  transition: 0.5s var(--transition-1);
   color: var(--white);
 }
 .series__item .rating ion-icon {
@@ -640,5 +640,8 @@ h3 {
   opacity: 30%;
 }
 .series__item:hover .series__item-content {
+  transform: translateY(0%);
+}
+.series__item:hover .rating {
   transform: translateY(0%);
 }/*# sourceMappingURL=app.css.map */

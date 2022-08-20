@@ -54,7 +54,6 @@
       aspect-ratio: 2/3;
       border-radius: 5px;
       overflow: hidden;
-      max-height: 500px;
       transition: var(--transition-1);
 
       &::after {
@@ -123,6 +122,8 @@
       padding: 5px 10px;
       border-radius: 20px;
       gap: 5px;
+      transform: translateY(-200%);
+      transition: 0.5s var(--transition-1);
       color: var(--white);
       ion-icon {
         color: yellow;
@@ -135,6 +136,9 @@
         opacity: 30%;
       }
       .series__item-content {
+        transform: translateY(0%);
+      }
+      .rating {
         transform: translateY(0%);
       }
     }
