@@ -1,0 +1,35 @@
+.cta {
+  // background: url("/assets/images/") no-repeat center center/cover;
+  padding-block: var(--section-padding);
+
+  &__wrapper {
+    padding-inline: 15px;
+  }
+
+  &__content {
+    margin-bottom: 25px;
+  }
+  &__title {
+    color: var(--eerie-black);
+    font-size: var(--fs-3);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  &__text {
+    color: var(--eerie-black);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-500);
+  }
+  &__form {
+    &-input {
+      font-size: var(--fs-9);
+      color: var(--eerie-black);
+      box-sizing: 0 5px 5px hsla(0, 0%, 0%, 0.3);
+      padding: 20px 30px;
+      margin-bottom: 15px;
+    }
+    &-btn {
+    }
+  }
+}
