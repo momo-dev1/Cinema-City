@@ -1,7 +1,8 @@
 .cta {
-  // background: url("/assets/images/") no-repeat center center/cover;
+  background: url("/assets/images/cta-bg.png") no-repeat center center/cover;
   padding-block: var(--section-padding);
-
+  text-align: center;
+  padding-block: 50px;
   &__wrapper {
     padding-inline: 15px;
   }
@@ -13,12 +14,10 @@
     color: var(--eerie-black);
     font-size: var(--fs-3);
     text-transform: uppercase;
-    line-height: 1.2;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   &__text {
     color: var(--eerie-black);
-    font-size: var(--fs-9);
     font-weight: var(--fw-500);
   }
   &__form {
@@ -27,9 +26,22 @@
       color: var(--eerie-black);
       box-sizing: 0 5px 5px hsla(0, 0%, 0%, 0.3);
       padding: 20px 30px;
+      border-radius: 5px;
       margin-bottom: 15px;
     }
     &-btn {
+      background: var(--eerie-black);
+      color: var(--emerald);
+      font-weight: var(--fw-500);
+      padding: 15px 25px;
+      margin-inline: auto;
+      text-transform: uppercase;
+      transition: var(--transition-2);
+      &:hover {
+        background: transparent;
+        border: 1px solid var(--eerie-black);
+        color: var(--eerie-black);
+      }
     }
   }
 }
