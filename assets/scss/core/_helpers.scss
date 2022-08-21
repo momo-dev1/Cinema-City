@@ -11,3 +11,10 @@
     pointer-events: all;
   }
 }
+
+.divider {
+  height: 5px;
+  margin-block: 40px;
+  border-top: 1px solid var(--rich-black);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}

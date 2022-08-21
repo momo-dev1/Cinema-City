@@ -3,6 +3,7 @@
   padding-block: var(--section-padding);
   text-align: center;
   padding-block: 50px;
+
   &__wrapper {
     padding-inline: 15px;
   }
@@ -10,16 +11,19 @@
   &__content {
     margin-bottom: 25px;
   }
+
   &__title {
     color: var(--eerie-black);
     font-size: var(--fs-3);
     text-transform: uppercase;
     margin-bottom: 10px;
   }
+
   &__text {
     color: var(--eerie-black);
     font-weight: var(--fw-500);
   }
+
   &__form {
     &-input {
       font-size: var(--fs-9);
