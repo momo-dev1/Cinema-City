@@ -65,3 +65,30 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .footer {
+    &__brand {
+      max-width: 750px;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-logo {
+        margin: 0px;
+        img {
+          width: 50px;
+        }
+        h5 {
+          font-size: 18px;
+        }
+      }
+    }
+    .quicklink {
+      max-width: 750px;
+      margin-inline: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

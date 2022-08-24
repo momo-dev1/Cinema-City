@@ -133,6 +133,7 @@
     }
     &__list {
       grid-template-columns: repeat(2, 1fr);
+      gap: 45px 55px;
     }
   }
 }

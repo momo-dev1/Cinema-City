@@ -25,6 +25,7 @@
   }
 
   &__form {
+    position: relative;
     &-input {
       font-size: var(--fs-9);
       color: var(--eerie-black);
@@ -55,6 +56,24 @@
     &__wrapper {
       max-width: 550px;
       margin-inline: auto;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .cta {
+    &__form {
+      &-btn {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        bottom: 3px;
+        &:hover {
+          background: var(--emerald);
+          border: 1px solid var(--eerie-black);
+          color: var(--white);
+        }
+      }
     }
   }
 }

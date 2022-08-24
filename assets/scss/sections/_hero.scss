@@ -56,3 +56,11 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .hero {
+    &__wrapper {
+      max-width: 720px;
+    }
+  }
+}
