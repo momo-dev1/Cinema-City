@@ -144,3 +144,24 @@
     }
   }
 }
+
+@media (min-width: 550px) {
+  .series {
+    &__wrapper {
+      max-width: 550px;
+      margin-inline: auto;
+    }
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      &-content {
+        bottom: 35px;
+        left: 15px;
+      }
+      &-title {
+        --fs-4: 18px;
+      }
+    }
+  }
+}

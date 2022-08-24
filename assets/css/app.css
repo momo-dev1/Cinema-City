@@ -415,6 +415,15 @@ h3 {
   margin-top: 10px;
 }
 
+@media (min-width: 550px) {
+  :root {
+    --fs-1: 45px;
+  }
+  .hero__wrapper {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+}
 .upcoming {
   background: url(../../images/upcoming-bg.png) no-repeat center center/cover;
   padding-block: var(--section-padding);
@@ -528,6 +537,15 @@ h3 {
   color: var(--emerald);
 }
 
+@media (min-width: 550px) {
+  .upcoming__wrapper {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+  .upcoming__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .service {
   background: url("../images/service-bg.jpg") no-repeat center center/cover;
   padding-block: var(--section-padding);
@@ -589,6 +607,22 @@ h3 {
   margin-bottom: 15px;
 }
 
+@media (min-width: 550px) {
+  .service__wrapper {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+  .service__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service__item {
+    display: flex;
+    gap: 30px;
+  }
+  .service__item-icon {
+    flex-shrink: 0;
+  }
+}
 .series {
   background: url("../images/series-bg.jpg") no-repeat center center/cover;
   padding-block: var(--section-padding);
@@ -722,6 +756,22 @@ h3 {
   transform: translateY(0%);
 }
 
+@media (min-width: 550px) {
+  .series__wrapper {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+  .series__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .series__item-content {
+    bottom: 35px;
+    left: 15px;
+  }
+  .series__item-title {
+    --fs-4: 18px;
+  }
+}
 .cta {
   background: url("/assets/images/cta-bg.png") no-repeat center center/cover;
   padding-block: var(--section-padding);
@@ -767,6 +817,12 @@ h3 {
   color: var(--eerie-black);
 }
 
+@media (min-width: 550px) {
+  .cta__wrapper {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+}
 .movie-details {
   padding-block: var(--section-padding);
   padding-inline: 25px;

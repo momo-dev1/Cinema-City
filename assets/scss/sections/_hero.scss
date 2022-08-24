@@ -44,3 +44,15 @@
     margin-top: 10px;
   }
 }
+
+@media (min-width: 550px) {
+  :root {
+    --fs-1: 45px;
+  }
+  .hero {
+    &__wrapper {
+      max-width: 550px;
+      margin-inline: auto;
+    }
+  }
+}

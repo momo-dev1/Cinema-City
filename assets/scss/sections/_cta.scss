@@ -49,3 +49,12 @@
     }
   }
 }
+
+@media (min-width: 550px) {
+  .cta {
+    &__wrapper {
+      max-width: 550px;
+      margin-inline: auto;
+    }
+  }
+}
