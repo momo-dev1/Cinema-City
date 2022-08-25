@@ -90,3 +90,13 @@
     }
   }
 }
+
+@media (min-width: 991px) {
+  .service {
+    &__wrapper {
+      max-width: 950px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

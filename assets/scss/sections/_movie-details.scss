@@ -1,4 +1,6 @@
 .movie-details {
+  background: url("/assets/images/movie-details.jpg") no-repeat center
+    center/cover;
   padding-block: var(--section-padding);
   padding-inline: 25px;
 
@@ -61,6 +63,17 @@
       ion-icon {
         color: yellow;
       }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .movie-details {
+    &__wrapper {
+      max-width: 950px;
+      margin-inline: auto;
+      display: flex;
+      gap: 30px;
     }
   }
 }

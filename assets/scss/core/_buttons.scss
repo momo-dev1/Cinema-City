@@ -27,6 +27,10 @@
   color: var(--white);
   font-size: var(--fs-1);
   padding: 5px;
+
+  @media (min-width: 991px) {
+    display: none;
+  }
 }
 
 .logo {

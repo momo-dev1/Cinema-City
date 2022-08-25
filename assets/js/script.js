@@ -50,3 +50,28 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 500 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
 
 });
+
+
+/**
+ * add Scrollbar
+ */
+const seriesList = document.querySelector(".series__list")
+const upcomingList = document.querySelector(".upcoming__list")
+
+const matchMediaQuery = window.matchMedia("(max-width:550px)")
+
+
+
+function addSrollBar(matchMediaQuery) {
+  if (matchMediaQuery.matches) { // If media query matches scrollbar
+    seriesList.classList.add("scrollbar")
+    upcomingList.classList.add("scrollbar")
+  } else {
+    seriesList.classList.remove("scrollbar")
+    upcomingList.classList.remove("scrollbar")
+  }
+}
+
+
+matchMediaQuery.addListener(addSrollBar)
+addSrollBar(matchMediaQuery)

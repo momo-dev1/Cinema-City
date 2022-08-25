@@ -137,3 +137,15 @@
     }
   }
 }
+
+@media (min-width: 991px) {
+  .upcoming {
+    &__wrapper {
+      max-width: 950px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

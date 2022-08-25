@@ -160,3 +160,36 @@
     }
   }
 }
+
+@media (min-width: 991px) {
+  .header {
+    &__wrapper {
+      max-width: 950px;
+      margin-inline: auto;
+    }
+    .navbar {
+      all: unset;
+
+      &__actions {
+        order: 1;
+        margin: 0;
+      }
+
+      &__header,
+      &__social {
+        display: none;
+      }
+
+      &__link,
+      &__list {
+        border: none;
+      }
+      &__list {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

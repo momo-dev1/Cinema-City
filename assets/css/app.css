@@ -169,6 +169,11 @@ h3 {
   font-size: var(--fs-1);
   padding: 5px;
 }
+@media (min-width: 991px) {
+  .menu-btn {
+    display: none;
+  }
+}
 
 .logo {
   display: flex;
@@ -354,6 +359,31 @@ h3 {
   .header .lang-container select:focus {
     outline: none;
     border: none;
+  }
+}
+@media (min-width: 991px) {
+  .header__wrapper {
+    max-width: 950px;
+    margin-inline: auto;
+  }
+  .header .navbar {
+    all: unset;
+  }
+  .header .navbar__actions {
+    order: 1;
+    margin: 0;
+  }
+  .header .navbar__header, .header .navbar__social {
+    display: none;
+  }
+  .header .navbar__link, .header .navbar__list {
+    border: none;
+  }
+  .header .navbar__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 0;
   }
 }
 .footer {
@@ -629,6 +659,14 @@ h3 {
     gap: 45px 55px;
   }
 }
+@media (min-width: 991px) {
+  .upcoming__wrapper {
+    max-width: 950px;
+  }
+  .upcoming__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .service {
   background: url("../images/service-bg.jpg") no-repeat center center/cover;
   padding-block: var(--section-padding);
@@ -704,6 +742,13 @@ h3 {
   }
   .service__item-icon {
     flex-shrink: 0;
+  }
+}
+@media (min-width: 991px) {
+  .service__wrapper {
+    max-width: 950px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 .series {
@@ -855,6 +900,14 @@ h3 {
     --fs-4: 18px;
   }
 }
+@media (min-width: 991px) {
+  .series__wrapper {
+    max-width: 950px;
+  }
+  .series__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .cta {
   background: url("/assets/images/cta-bg.png") no-repeat center center/cover;
   padding-block: var(--section-padding);
@@ -914,7 +967,6 @@ h3 {
     position: absolute;
     top: 3px;
     right: 3px;
-    bottom: 3px;
   }
   .cta__form-btn:hover {
     background: var(--emerald);
@@ -922,7 +974,21 @@ h3 {
     color: var(--white);
   }
 }
+@media (min-width: 991px) {
+  .cta__wrapper {
+    max-width: 950px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cta__form {
+    width: 400px;
+  }
+  .cta__form-input {
+    width: 100%;
+  }
+}
 .movie-details {
+  background: url("/assets/images/movie-details.jpg") no-repeat center center/cover;
   padding-block: var(--section-padding);
   padding-inline: 25px;
 }
@@ -984,4 +1050,13 @@ h3 {
 }
 .movie-details__stats .box ion-icon {
   color: yellow;
+}
+
+@media (min-width: 991px) {
+  .movie-details__wrapper {
+    max-width: 950px;
+    margin-inline: auto;
+    display: flex;
+    gap: 30px;
+  }
 }/*# sourceMappingURL=app.css.map */

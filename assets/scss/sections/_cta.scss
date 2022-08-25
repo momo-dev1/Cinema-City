@@ -67,12 +67,28 @@
         position: absolute;
         top: 3px;
         right: 3px;
-        bottom: 3px;
+
         &:hover {
           background: var(--emerald);
           border: 1px solid var(--eerie-black);
           color: var(--white);
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .cta {
+    &__wrapper {
+      max-width: 950px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__form {
+      width: 400px;
+      &-input {
+        width: 100%;
       }
     }
   }
