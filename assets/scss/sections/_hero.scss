@@ -51,6 +51,7 @@
   }
   .hero {
     &__wrapper {
+      width: 1000px;
       max-width: 550px;
       margin-inline: auto;
     }
@@ -61,6 +62,17 @@
   .hero {
     &__wrapper {
       max-width: 720px;
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  :root {
+    --fs-1: 65px;
+  }
+  .hero {
+    &__wrapper {
+      max-width: 950px;
     }
   }
 }
